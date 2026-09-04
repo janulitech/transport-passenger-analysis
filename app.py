@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_csv("dataset/transport_passenger_analysis_6000.csv")
+df = pd.read_csv("transport_passenger_analysis_6000.csv")
 
 df["Date"] = pd.to_datetime(df["Date"])
 df["Month"] = df["Date"].dt.to_period("M").astype(str)
